@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Valeway Technologies — Where Agents Converge</title>
+<meta name="description" content="Independent research on personal AI agents: a trust layer where rules are enforced in code, not judged by an AI. Research write-up and open repository coming soon.">
+<link rel="canonical" href="https://valewaytechnologies.com/">
+<meta name="theme-color" content="#010818">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Valeway Technologies">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Valeway Technologies — Where Agents Converge">
+<meta property="og:description" content="Independent research on personal AI agents: a trust layer where rules are enforced in code, not judged by an AI. Research write-up and open repository coming soon.">
+<meta property="og:url" content="https://valewaytechnologies.com/">
+<meta property="og:image" content="https://valewaytechnologies.com/assets/og-1200x630.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Valeway: two network paths converging into a V. Where Agents Converge.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/icon-512.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" href="assets/montserrat-var.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:"Montserrat";src:url(assets/montserrat-var.woff2) format("woff2");font-weight:300 800;font-display:swap}
+:root{--bg:#010818;--bg2:#06142A;--ink:#EAF4F7;--muted:#B4C5D2;--indigo:#3B2A9C;--teal:#11B5A8;--cyan:#22D3EE;--mint:#5EEAD4;--line:rgba(94,234,212,.16);
+--font:"Montserrat","Segoe UI",system-ui,-apple-system,Helvetica,Arial,sans-serif}
+*{box-sizing:border-box}html{background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--ink);font:450 17px/1.7 var(--font);-webkit-font-smoothing:antialiased}
+.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:16px;background:#fff;color:#000;padding:8px 12px;z-index:10}
+a{color:var(--mint);text-underline-offset:4px}a:focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:2px}
+.wrap{max-width:860px;margin:0 auto;padding:0 24px}
+.top{position:absolute;inset:0 0 auto 0;display:flex;justify-content:space-between;align-items:center;padding:20px clamp(20px,4vw,48px);z-index:3}
+.brand{display:flex;align-items:center;gap:12px;color:var(--ink);text-decoration:none;font-weight:600;letter-spacing:.32em;font-size:14px}
+.brand img{height:28px;width:auto}
+.contact-link{color:var(--ink);font-size:13px;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;border:1px solid var(--line);padding:8px 16px;border-radius:999px}
+.contact-link:hover{border-color:var(--mint)}
+.hero{position:relative;text-align:center;padding-bottom:40px}
+.hero-art{position:relative;height:clamp(420px,52vw,700px);overflow:hidden}
+.hero-art img{width:100%;height:100%;object-fit:cover;object-position:50% 45%;display:block}
+.hero-art::after{content:"";position:absolute;inset:auto 0 0 0;height:35%;background:linear-gradient(transparent,var(--bg))}
+.wordmark{position:relative;margin-top:clamp(-70px,-5vw,-30px);padding:0 16px}
+.wordmark p{margin:0}
+.wm-name{font-weight:600;font-size:clamp(40px,7vw,84px);letter-spacing:.24em;margin-right:-.24em!important;line-height:1.1}
+.wm-sub{font-weight:400;font-size:clamp(13px,1.8vw,21px);letter-spacing:.55em;margin-right:-.55em!important;color:var(--muted);margin-top:10px!important}
+.wm-tag{font-size:clamp(16px,1.8vw,20px);margin-top:22px!important;color:var(--ink)}
+.rule{display:block;width:56px;height:2px;margin:16px auto 0;background:linear-gradient(90deg,var(--teal),var(--cyan))}
+.intro{padding-top:56px;padding-bottom:16px;border-top:1px solid var(--line)}
+.based{display:inline-block;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--mint);border:1px solid var(--line);border-radius:999px;padding:4px 14px;margin:0 0 20px}
+h1{font-weight:600;font-size:clamp(30px,4.6vw,46px);line-height:1.15;letter-spacing:-.01em;margin:0 0 22px}
+.lead{color:var(--muted);font-size:clamp(17px,1.9vw,19px);margin:0}
+h2{font-size:13px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--mint);margin:64px 0 20px}
+.cards{list-style:none;padding:0;margin:0;display:grid;gap:16px;grid-template-columns:repeat(3,1fr)}
+.cards li{background:linear-gradient(160deg,rgba(59,42,156,.22),rgba(17,181,168,.08));border:1px solid var(--line);border-radius:14px;padding:22px}
+.cards strong{display:block;font-weight:600;margin-bottom:8px;font-size:16px}
+.cards span{color:var(--muted);font-size:15px;line-height:1.6}
+.soon{margin-top:28px;display:flex;align-items:center;gap:14px;padding:18px 22px;border-radius:14px;border:1px solid rgba(34,211,238,.35);background:rgba(34,211,238,.06)}
+.soon p{margin:0}.dot{width:10px;height:10px;border-radius:50%;background:var(--cyan);box-shadow:0 0 14px var(--cyan);flex:none}
+.contact p{margin:0;color:var(--ink)}
+.foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-top:80px;padding-top:24px;padding-bottom:40px;border-top:1px solid var(--line);color:var(--muted);font-size:13px;letter-spacing:.04em}
+@media(max-width:760px){.cards{grid-template-columns:1fr}.brand span{display:none}.hero-art{height:clamp(300px,82vw,360px);margin-top:44px}.hero-art img{object-position:50% 50%}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><a class="brand" href="/" aria-label="Valeway Technologies home"><picture><source srcset="assets/logo-v-dark-96.webp" type="image/webp"><img src="assets/logo-v-dark-96.png" width="150" height="96" alt=""></picture><span>VALEWAY</span></a><a class="contact-link" href="mailto:hello@valewaytechnologies.com">Contact</a></header>
+<main id="main">
+<section class="hero" aria-labelledby="wm">
+<div class="hero-art" aria-hidden="true"><picture><source srcset="assets/hero.webp" type="image/webp"><img src="assets/hero.jpg" width="1280" height="720" alt="" fetchpriority="high"></picture></div>
+<div class="wordmark">
+<p id="wm" class="wm-name">VALEWAY</p>
+<p class="wm-sub">TECHNOLOGIES</p>
+<p class="wm-tag">Where Agents Converge</p>
+<span class="rule" aria-hidden="true"></span>
+</div>
+</section>
+<section class="intro wrap">
+
+<h1>A trust layer for personal AI agents.</h1>
+<p class="lead">Personal agents are starting to act on our behalf. Valeway is independent research into how they can do so safely, with clear rules enforced in code rather than an AI judging each action as it goes. The aim is simple: agents that people, businesses and public services can rely on when they work together.</p>
+</section>
+<section class="wrap" aria-labelledby="work">
+<h2 id="work">What we're working on</h2>
+<ul class="cards">
+<li><strong>Rules enforced in code</strong><span>Permissions that are checked deterministically, every time, before an agent acts.</span></li>
+<li><strong>Safe agent-to-agent exchange</strong><span>Ways for agents acting for different people and organisations to work together without overreaching.</span></li>
+<li><strong>Open, testable research</strong><span>Methods and findings published so others can examine and build on them.</span></li>
+</ul>
+<div class="soon"><span class="dot" aria-hidden="true"></span><p><strong>Coming soon:</strong> a research write-up and open repository.</p></div>
+</section>
+<section class="wrap contact" aria-labelledby="contact">
+<h2 id="contact">Get in touch</h2>
+<p>Research by Sebastian Vale. For enquiries, write to <a href="mailto:hello@valewaytechnologies.com">hello@valewaytechnologies.com</a>.</p>
+<!-- Social links: uncomment once accounts exist
+<p class="social"><a href="https://x.com/ValewayTech" rel="me">X: @ValewayTech</a> · <a href="https://www.reddit.com/user/Valeway" rel="me">Reddit: u/Valeway</a></p>
+-->
+</section>
+</main>
+<footer class="wrap foot"><span>© 2026 Valeway Technologies</span><span>Where Agents Converge</span></footer>
+</body>
+</html>
